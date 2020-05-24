@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Notification.css'
+
 class Notification extends Component {
   render() {
     const { hasUnread } = this.props;
