@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Notification extends Component {
+class Notification extends Component {
   render() {
     const { hasUnread } = this.props;
     // Component này dùng để hiển thị icon hình quả chuông như hình dưới
@@ -10,5 +10,13 @@ export default class Notification extends Component {
     // Cho biết hasUnread là một boolean
     // Dùng icon ở flaticon.com
     // Thêm component này vào App component để test
+    return <div class="notification">
+            {
+              hasUnread && <img src="https://as2.ftcdn.net/jpg/02/95/17/63/500_F_295176341_JAYNg7pa0IOBMFyibnCSTKZ3lfDP29AB.jpg"/>
+            }
+            
+           </div>;
   }
 }
+
+export default Notification;
