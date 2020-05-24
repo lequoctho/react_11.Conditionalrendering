@@ -13,8 +13,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img src="https://image.flaticon.com/icons/svg/2097/2097743.svg" />
-        <Notification hasUnread={this.hasUnread} />     
+        <img class="image" src="https://image.flaticon.com/icons/svg/2097/2097743.svg" />
+        <Notification hasUnread={this.hasUnread} />  
       </div>
     );
   }
